@@ -1,9 +1,26 @@
 import React, { useState } from 'react';
 /*import onClickOutside from 'react-onclickoutside';*/
 
+var diet = "None";
+var allergies = [];
+var macros = [];
+var meals = 0;
+var hall = "";
+
 function Dropdown({ title, items, multiSelect = false }) {
   const [open, setOpen] = useState(false);
   const [selection, setSelection] = useState([]);
+  if (title === "Diet") {
+    diet = selection
+  } else if (title === "Allergies") {
+    allergies = selection
+  } else {
+  }
+  console.log("DIET")
+  console.log(diet)
+  console.log("ALLERGIES")
+  console.log(allergies)
+
   const toggle = () => setOpen(!open);
   Dropdown.handleClickOutside = () => setOpen(false);
 
