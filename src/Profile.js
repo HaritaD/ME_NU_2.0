@@ -39,18 +39,18 @@ function Profile() {
           🎥
         </span>
       </h1>
-      <Dropdown title="Select movie" items={dietitems} multiSelect />
+      <Dropdown title="Diet" items={dietitems} Select />
     </div>
     </div>
     <div>
     <div className="container">
       <h1 style={{ textAlign: 'center' }}>
-        Buy Movies{' '}
+        Allergies{' '}
         <span role="img" aria-label="Movie projector">
           🎥
         </span>
       </h1>
-      <Dropdown title="Select movie" items={dietitems} multiSelect />
+      <Dropdown title="Allergies" items={dietitems} multiSelect />
     </div>
     </div>
     <div>
