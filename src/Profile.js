@@ -129,52 +129,18 @@ function Profile() {
           🎥
         </span>
       </h1>
-<<<<<<< HEAD
-      <Dropdown title="Select Diet" items={dietitems} multiSelect />
-    </div>
-    </div>
-    <div>
-    <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
-        Allergies{' '}
-        <span role="img" aria-label="Movie projector">
-          🎥
-        </span>
-      </h1>
-      <Dropdown title="Select Allergies" items={allergies} multiSelect />
-    </div>
-    </div>
-    <div>
-    <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
-        Dining Hall{' '}
-        <span role="img" aria-label="Movie projector">
-          🎥
-        </span>
-      </h1>
-      <Dropdown title="Select Dining Hall" items={DiningHall} Select />
-=======
       <Dropdown title="Diet" items={dietitems} Select />
->>>>>>> 0ec6fb77200976e21e4e43b0f7d3f328931aa728
     </div>
     </div>
     <div>
     <div className="container">
       <h1 style={{ textAlign: 'center' }}>
-<<<<<<< HEAD
-        Number of Meals{' '}
-=======
         Allergies{' '}
->>>>>>> 0ec6fb77200976e21e4e43b0f7d3f328931aa728
         <span role="img" aria-label="Movie projector">
           🎥
         </span>
       </h1>
-<<<<<<< HEAD
-      <Dropdown title="Select Preferred # of Meals" items={NumSlots} Select />
-=======
       <Dropdown title="Allergies" items={dietitems} multiSelect />
->>>>>>> 0ec6fb77200976e21e4e43b0f7d3f328931aa728
     </div>
     </div>
     <div>
