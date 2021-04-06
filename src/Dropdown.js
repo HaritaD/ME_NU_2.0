@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import CsvDownload from 'react-json-to-csv';
 /*import onClickOutside from 'react-onclickoutside';*/
 
-var profile = {
+
+export var prof = {
   'hall': 'None',
   'diet': 'None',
   'allergies': [],
@@ -17,28 +19,28 @@ function Dropdown({ title, items, multiSelect = false }) {
   const [open, setOpen] = useState(false);
   const [selection, setSelection] = useState([]);
   if (title === 'Select your preferred dining hall.') {
-    profile.hall = selection
+    prof.hall = selection
   } else if (title === 'Select your preferred diet.') {
-    profile.diet = selection
+    prof.diet = selection
   } else if (title === 'Select your dietary restrictions.') {
-    profile.allergies = selection
+    prof.allergies = selection
   } else if (title === 'Select your preferred total calories per day.') {
-    profile.calories = selection
+    prof.calories = selection
   } else if (title === 'Select your preferred percentage of carbs.') {
-    profile.carbs = selection
+    prof.carbs = selection
   } else if (title === 'Select your preferred percentage of fats.') {
-    profile.fats = selection
+    prof.fats = selection
   } else if (title === 'Select your preferred percentage of protein.') {
-    profile.protein = selection
+    prof.protein = selection
   } else if (title === 'Select your preferred number of meals per day.') {
-    profile.meals = selection
+    prof.meals = selection
   } else if (title === 'Select your preferred number of items per meal.') {
-    profile.items = selection
+    prof.items = selection
   } else {
-    // do nothing
+    //do nothing
   }
 
-  console.log(profile)
+  console.log(prof)
 
   const toggle = () => setOpen(!open);
   Dropdown.handleClickOutside = () => setOpen(false);
@@ -103,4 +105,4 @@ const clickOutsideConfig = {
 };
 
 export default onClickOutside(Dropdown, clickOutsideConfig);*/
-export default Dropdown
+export default Dropdown;
