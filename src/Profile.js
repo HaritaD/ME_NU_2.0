@@ -3,7 +3,7 @@ import './App.css';
 import Dropdown from './Dropdown';
 import './Dropdown.scss';
 import {GiHeartWings} from 'react-icons/gi';
-import './Form';
+import Form from './Form';
 
 
 const dietitems = [
@@ -127,10 +127,8 @@ function Profile() {
       <h1 style={{ textAlign: 'center' }}>
         Diet{' '}
         <span role="img" aria-label="Movie projector">
-          
         </span>
       </h1>
-<<<<<<< HEAD
       <Dropdown title="Select Diet" items={dietitems} multiSelect />
     </div>
     </div>
@@ -154,28 +152,18 @@ function Profile() {
         </span>
       </h1>
       <Dropdown title="Select Dining Hall" items={DiningHall} Select />
-=======
-      <Dropdown title="Diet" items={dietitems} Select />
->>>>>>> bdde2a2456448caa2a485101fb83f1af159cc0cd
     </div>
     </div>
     <div>
     <div className="container">
       <h1 style={{ textAlign: 'center' }}>
-<<<<<<< HEAD
         Number of Meals{' '}
-=======
         Allergies{' '}
->>>>>>> bdde2a2456448caa2a485101fb83f1af159cc0cd
         <span role="img" aria-label="Movie projector">
           
         </span>
       </h1>
-<<<<<<< HEAD
       <Dropdown title="Select Preferred # of Meals" items={NumSlots} Select />
-=======
-      <Dropdown title="Allergies" items={dietitems} multiSelect />
->>>>>>> bdde2a2456448caa2a485101fb83f1af159cc0cd
     </div>
     </div>
     <div>
@@ -189,8 +177,10 @@ function Profile() {
       <Dropdown title="Select Preferred # of Items/Meal" items={NumItems} Select />
     </div>
     </div>
+    <Form />
     </div>
   );
+  
 }
 
 export default Profile;
