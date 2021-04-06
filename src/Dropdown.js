@@ -1,38 +1,46 @@
 import React, { useState } from 'react';
+import CsvDownload from 'react-json-to-csv';
 /*import onClickOutside from 'react-onclickoutside';*/
 
-var profile = {
+
+export var prof = {
+  'hall': 'None',
   'diet': 'None',
   'allergies': [],
-  'macros': [],
   'calories': 0,
+  'carbs': 0,
+  'fats': 0,
+  'protein': 0,
   'meals': 0,
   'items': 0,
-  'hall': 'N/A'
 }
 
 function Dropdown({ title, items, multiSelect = false }) {
   const [open, setOpen] = useState(false);
   const [selection, setSelection] = useState([]);
-  if (title === 'Diet') {
-    profile.diet = selection
-  } else if (title === 'Allergies') {
-    profile.allergies = selection
-  } else if (title === 'Macros') {
-    profile.macros = selection
-  } else if (title === 'Calories') {
-    profile.calories = selection
-  } else if (title === 'Meals') {
-    profile.meals = selection
-  } else if (title === 'Items') {
-    profile.items = selection
-  } else if (title === 'Hall') {
-    profile.hall = selection
+  if (title === 'Select your preferred dining hall.') {
+    prof.hall = selection
+  } else if (title === 'Select your preferred diet.') {
+    prof.diet = selection
+  } else if (title === 'Select your dietary restrictions.') {
+    prof.allergies = selection
+  } else if (title === 'Select your preferred total calories per day.') {
+    prof.calories = selection
+  } else if (title === 'Select your preferred percentage of carbs.') {
+    prof.carbs = selection
+  } else if (title === 'Select your preferred percentage of fats.') {
+    prof.fats = selection
+  } else if (title === 'Select your preferred percentage of protein.') {
+    prof.protein = selection
+  } else if (title === 'Select your preferred number of meals per day.') {
+    prof.meals = selection
+  } else if (title === 'Select your preferred number of items per meal.') {
+    prof.items = selection
   } else {
-    // do nothing
+    //do nothing
   }
 
-  console.log(profile)
+  console.log(prof)
 
   const toggle = () => setOpen(!open);
   Dropdown.handleClickOutside = () => setOpen(false);
@@ -97,4 +105,4 @@ const clickOutsideConfig = {
 };
 
 export default onClickOutside(Dropdown, clickOutsideConfig);*/
-export default Dropdown
+export default Dropdown;
