@@ -6,7 +6,7 @@ import {GiHeartWings} from 'react-icons/gi';
 import './Form';
 
 
-const dietitems = [
+const Diet = [
   {
     id: 1,
     value: 'None',
@@ -28,7 +28,7 @@ const dietitems = [
     value: 'Vegan',
   },
 ];
-const allergies = [
+const Allergies = [
   {
     id: 1,
     value: 'Dairy',
@@ -118,33 +118,206 @@ const NumItems = [
   },
 
 ];
+const Carbs = [
+  {
+    id: 1,
+    value: 10,
+  },
+  {
+    id: 2,
+    value: 20,
+  },
+  {
+    id: 3,
+    value: 30,
+  },
+  {
+    id: 4,
+    value: 40,
+
+  },
+  {
+    id: 5,
+    value: 50,
+    
+  },
+  {
+    id: 6,
+    value: 70,
+  },
+  {
+    id: 7,
+    value: 70,
+  },
+  {
+    id: 8,
+    value: 80,
+  },
+  {
+    id: 9,
+    value: 90,
+
+  },
+  {
+    id: 10,
+    value: 100,
+    
+  },
+
+];
+const Fats = [
+  {
+    id: 1,
+    value: 10,
+  },
+  {
+    id: 2,
+    value: 20,
+  },
+  {
+    id: 3,
+    value: 30,
+  },
+  {
+    id: 4,
+    value: 40,
+
+  },
+  {
+    id: 5,
+    value: 50,
+    
+  },
+  {
+    id: 6,
+    value: 70,
+  },
+  {
+    id: 7,
+    value: 70,
+  },
+  {
+    id: 8,
+    value: 80,
+  },
+  {
+    id: 9,
+    value: 90,
+
+  },
+  {
+    id: 10,
+    value: 100,
+    
+  },
+
+];
+
+const Protein = [
+  {
+    id: 1,
+    value: 10,
+  },
+  {
+    id: 2,
+    value: 20,
+  },
+  {
+    id: 3,
+    value: 30,
+  },
+  {
+    id: 4,
+    value: 40,
+
+  },
+  {
+    id: 5,
+    value: 50,
+    
+  },
+  {
+    id: 6,
+    value: 70,
+  },
+  {
+    id: 7,
+    value: 70,
+  },
+  {
+    id: 8,
+    value: 80,
+  },
+  {
+    id: 9,
+    value: 90,
+
+  },
+  {
+    id: 10,
+    value: 100,
+    
+  },
+
+];
+
+const Calories = [
+  {
+    id: 1,
+    value: 1000,
+  },
+  {
+    id: 2,
+    value: 1200,
+  },
+  {
+    id: 3,
+    value: 1400,
+  },
+  {
+    id: 4,
+    value: 1600,
+
+  },
+  {
+    id: 5,
+    value: 1800,
+    
+  },
+  {
+    id: 6,
+    value: 2000,
+  },
+  {
+    id: 7,
+    value: 2200,
+  },
+  {
+    id: 8,
+    value: 2400,
+  },
+  {
+    id: 9,
+    value: 2600,
+
+  },
+  {
+    id: 10,
+    value: 2800,
+    
+  },
+  {
+    id: 11,
+    value: 3200,
+    
+  },
+
+];
+
 
 function Profile() {
   return (
     <div horizonatl layout> 
-    <div>
-    <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
-        Diet{' '}
-        <span role="img" aria-label="Movie projector">
-          
-        </span>
-      </h1>
-<<<<<<< HEAD
-      <Dropdown title="Select Diet" items={dietitems} multiSelect />
-    </div>
-    </div>
-    <div>
-    <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
-        Allergies{' '}
-        <span role="img" aria-label="Movie projector">
-          
-        </span>
-      </h1>
-      <Dropdown title="Select Allergies" items={allergies} multiSelect />
-    </div>
-    </div>
     <div>
     <div className="container">
       <h1 style={{ textAlign: 'center' }}>
@@ -153,43 +326,107 @@ function Profile() {
           
         </span>
       </h1>
-      <Dropdown title="Select Dining Hall" items={DiningHall} Select />
-=======
-      <Dropdown title="Diet" items={dietitems} Select />
->>>>>>> bdde2a2456448caa2a485101fb83f1af159cc0cd
+      <Dropdown title="Select your preferred dining hall." items={DiningHall} Select />
     </div>
     </div>
     <div>
     <div className="container">
       <h1 style={{ textAlign: 'center' }}>
-<<<<<<< HEAD
-        Number of Meals{' '}
-=======
+        Diet{' '}
+        <span role="img" aria-label="Movie projector">
+          
+        </span>
+      </h1>
+      <Dropdown title="Select your preferred diet." items={Diet} multiSelect />
+    </div>
+    </div>
+
+    <div>
+    <div className="container">
+      <h1 style={{ textAlign: 'center' }}>
         Allergies{' '}
->>>>>>> bdde2a2456448caa2a485101fb83f1af159cc0cd
         <span role="img" aria-label="Movie projector">
           
         </span>
       </h1>
-<<<<<<< HEAD
-      <Dropdown title="Select Preferred # of Meals" items={NumSlots} Select />
-=======
-      <Dropdown title="Allergies" items={dietitems} multiSelect />
->>>>>>> bdde2a2456448caa2a485101fb83f1af159cc0cd
+      <Dropdown title="Select your dietary restrictions." items={Allergies} Select />
     </div>
     </div>
+
     <div>
     <div className="container">
       <h1 style={{ textAlign: 'center' }}>
-        Number of Items{' '}
+        Total Calories per Day{' '}
         <span role="img" aria-label="Movie projector">
           
         </span>
       </h1>
-      <Dropdown title="Select Preferred # of Items/Meal" items={NumItems} Select />
+      <Dropdown title="Select preferred total calories per day." items={Calories} Select />
     </div>
     </div>
+
+    <div>
+    <div className="container">
+      <h1 style={{ textAlign: 'center' }}>
+        % Carbs{' '}
+        <span role="img" aria-label="Movie projector">
+          
+        </span>
+      </h1>
+      <Dropdown title="Select preferred percentage of carbs." items={Carbs} Select />
     </div>
+    </div>
+
+    <div>
+    <div className="container">
+      <h1 style={{ textAlign: 'center' }}>
+        % Fats{' '}
+        <span role="img" aria-label="Movie projector">
+          
+        </span>
+      </h1>
+      <Dropdown title="Select preferred percentage of fats." items={Fats} Select />
+    </div>
+    </div>
+
+    <div>
+    <div className="container">
+      <h1 style={{ textAlign: 'center' }}>
+        % Protein{' '}
+        <span role="img" aria-label="Movie projector">
+          
+        </span>
+      </h1>
+      <Dropdown title="Select preferred percentage of protein." items={Protein} Select />
+    </div>
+    </div>
+
+    <div>
+    <div className="container">
+      <h1 style={{ textAlign: 'center' }}>
+        Meals per Day{' '}
+        <span role="img" aria-label="Movie projector">
+          
+        </span>
+      </h1>
+      <Dropdown title="Select preferred number of meals per day." items={NumSlots} Select />
+    </div>
+    </div>
+
+    <div>
+    <div className="container">
+      <h1 style={{ textAlign: 'center' }}>
+        Items per Meal{' '}
+        <span role="img" aria-label="Movie projector">
+          
+        </span>
+      </h1>
+      <Dropdown title="Select preferred number of items per meal." items={NumItems} Select />
+    </div>
+    </div>
+
+    </div>
+    
   );
 }
 
