@@ -10,85 +10,111 @@ import CsvDownload from 'react-json-to-csv';
 
 const Diet = [
   {
+    id: 1,
     value: 'None',
   },
   {
+    id: 2,
     value: 'Vegetarian',
   },
   {
+    id: 3,
     value: 'Balanced',
   },
   {
+    id: 4,
     value: 'Avoiding Gluten',
   },
   {
+    id: 5,
     value: 'Vegan',
   },
 ];
 const Allergies = [
   {
+    id: 1,
     value: 'Dairy',
   },
   {
+    id: 2,
     value: 'Nuts',
   },
   {
+    id: 3,
     value: 'Shellfish',
   },
   {
+    id: 4,
     value: 'Eggs',
   },
   {
+    id: 5,
     value: 'Soy',
   },
 ];
 const DiningHall = [
   {
+    id: 1,
     value: 'Allison',
   },
   {
+    id: 2,
     value: 'Sargent',
   },
   {
+    id: 3,
     value: 'Elder',
   },
   {
+    id: 4,
     value: 'Foster Walker',
   },
 ]
   const NumSlots = [
     {
+      id: 1,
       value: 1,
     },
     {
+      id: 2,
       value: 2,
     },
     {
+      id: 3,
       value: 3,
     },
     {
+      id: 4,
       value: 4,
+
     },
     {
+      id: 5,
       value: 5,
+      
     },
   
 ];
 const NumItems = [
   {
+    id: 1,
     value: 1,
   },
   {
+    id: 2,
     value: 2,
   },
   {
+    id: 3,
     value: 3,
   },
   {
+    id: 4,
     value: 4,
 
   },
   {
+    id: 5,
     value: 5,
     
   },
@@ -96,36 +122,46 @@ const NumItems = [
 ];
 const Carbs = [
   {
+    id: 1,
     value: 10,
   },
   {
+    id: 2,
     value: 20,
   },
   {
+    id: 3,
     value: 30,
   },
   {
+    id: 4,
     value: 40,
 
   },
   {
+    id: 5,
     value: 50,
     
   },
   {
+    id: 6,
+    value: 60,
+  },
+  {
+    id: 7,
     value: 70,
   },
   {
-    value: 70,
-  },
-  {
+    id: 8,
     value: 80,
   },
   {
+    id: 9,
     value: 90,
 
   },
   {
+    id: 10,
     value: 100,
     
   },
@@ -133,36 +169,46 @@ const Carbs = [
 ];
 const Fats = [
   {
+    id: 1,
     value: 10,
   },
   {
+    id: 2,
     value: 20,
   },
   {
+    id: 3,
     value: 30,
   },
   {
+    id: 4,
     value: 40,
 
   },
   {
+    id: 5,
     value: 50,
     
   },
   {
+    id: 6,
     value: 70,
   },
   {
+    id: 7,
     value: 70,
   },
   {
+    id: 8,
     value: 80,
   },
   {
+    id: 9,
     value: 90,
 
   },
   {
+    id: 10,
     value: 100,
     
   },
@@ -171,36 +217,46 @@ const Fats = [
 
 const Protein = [
   {
+    id: 1,
     value: 10,
   },
   {
+    id: 2,
     value: 20,
   },
   {
+    id: 3,
     value: 30,
   },
   {
+    id: 4,
     value: 40,
 
   },
   {
+    id: 5,
     value: 50,
     
   },
   {
+    id: 6,
     value: 70,
   },
   {
+    id: 7,
     value: 70,
   },
   {
+    id: 8,
     value: 80,
   },
   {
+    id: 9,
     value: 90,
 
   },
   {
+    id: 10,
     value: 100,
     
   },
@@ -209,41 +265,51 @@ const Protein = [
 
 const Calories = [
   {
+    id: 1,
     value: 1000,
   },
   {
+    id: 2,
     value: 1200,
   },
   {
-
+    id: 3,
     value: 1400,
   },
   {
+    id: 4,
     value: 1600,
 
   },
   {
+    id: 5,
     value: 1800,
     
   },
   {
+    id: 6,
     value: 2000,
   },
   {
+    id: 7,
     value: 2200,
   },
   {
+    id: 8,
     value: 2400,
   },
   {
+    id: 9,
     value: 2600,
 
   },
   {
+    id: 10,
     value: 2800,
     
   },
   {
+    id: 11,
     value: 3200,
     
   },
@@ -253,6 +319,7 @@ const Calories = [
 
 const Save = [
   {
+    id: 1,
     value: {prof},
   },
 ];
