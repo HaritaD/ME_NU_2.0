@@ -337,7 +337,7 @@ function Profile() {
           
         </span>
       </h1>
-      <Dropdown title="Select your preferred diet." items={Diet} multiSelect />
+      <Dropdown title="Select your preferred diet." items={Diet} Select />
     </div>
     </div>
 
@@ -349,7 +349,7 @@ function Profile() {
           
         </span>
       </h1>
-      <Dropdown title="Select your dietary restrictions." items={Allergies} Select />
+      <Dropdown title="Select your dietary restrictions." items={Allergies} multiSelect />
     </div>
     </div>
 
@@ -361,7 +361,7 @@ function Profile() {
           
         </span>
       </h1>
-      <Dropdown title="Select preferred total calories per day." items={Calories} Select />
+      <Dropdown title="Select your preferred total calories per day." items={Calories} Select />
     </div>
     </div>
 
@@ -373,7 +373,7 @@ function Profile() {
           
         </span>
       </h1>
-      <Dropdown title="Select preferred percentage of carbs." items={Carbs} Select />
+      <Dropdown title="Select your preferred percentage of carbs." items={Carbs} Select />
     </div>
     </div>
 
@@ -385,7 +385,7 @@ function Profile() {
           
         </span>
       </h1>
-      <Dropdown title="Select preferred percentage of fats." items={Fats} Select />
+      <Dropdown title="Select your preferred percentage of fats." items={Fats} Select />
     </div>
     </div>
 
@@ -397,7 +397,7 @@ function Profile() {
           
         </span>
       </h1>
-      <Dropdown title="Select preferred percentage of protein." items={Protein} Select />
+      <Dropdown title="Select your preferred percentage of protein." items={Protein} Select />
     </div>
     </div>
 
@@ -409,7 +409,7 @@ function Profile() {
           
         </span>
       </h1>
-      <Dropdown title="Select preferred number of meals per day." items={NumSlots} Select />
+      <Dropdown title="Select your preferred number of meals per day." items={NumSlots} Select />
     </div>
     </div>
 
@@ -421,7 +421,7 @@ function Profile() {
           
         </span>
       </h1>
-      <Dropdown title="Select preferred number of items per meal." items={NumItems} Select />
+      <Dropdown title="Select your preferred number of items per meal." items={NumItems} Select />
     </div>
     </div>
 

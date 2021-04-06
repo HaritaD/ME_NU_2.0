@@ -2,32 +2,38 @@ import React, { useState } from 'react';
 /*import onClickOutside from 'react-onclickoutside';*/
 
 var profile = {
+  'hall': 'None',
   'diet': 'None',
   'allergies': [],
-  'macros': [],
   'calories': 0,
+  'carbs': 0,
+  'fats': 0,
+  'protein': 0,
   'meals': 0,
   'items': 0,
-  'hall': 'N/A'
 }
 
 function Dropdown({ title, items, multiSelect = false }) {
   const [open, setOpen] = useState(false);
   const [selection, setSelection] = useState([]);
-  if (title === 'Diet') {
-    profile.diet = selection
-  } else if (title === 'Allergies') {
-    profile.allergies = selection
-  } else if (title === 'Macros') {
-    profile.macros = selection
-  } else if (title === 'Calories') {
-    profile.calories = selection
-  } else if (title === 'Meals') {
-    profile.meals = selection
-  } else if (title === 'Items') {
-    profile.items = selection
-  } else if (title === 'Hall') {
+  if (title === 'Select your preferred dining hall.') {
     profile.hall = selection
+  } else if (title === 'Select your preferred diet.') {
+    profile.diet = selection
+  } else if (title === 'Select your dietary restrictions.') {
+    profile.allergies = selection
+  } else if (title === 'Select your preferred total calories per day.') {
+    profile.calories = selection
+  } else if (title === 'Select your preferred percentage of carbs.') {
+    profile.carbs = selection
+  } else if (title === 'Select your preferred percentage of fats.') {
+    profile.fats = selection
+  } else if (title === 'Select your preferred percentage of protein.') {
+    profile.protein = selection
+  } else if (title === 'Select your preferred number of meals per day.') {
+    profile.meals = selection
+  } else if (title === 'Select your preferred number of items per meal.') {
+    profile.items = selection
   } else {
     // do nothing
   }
