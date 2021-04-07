@@ -85,16 +85,6 @@ const DiningHall = [
       id: 3,
       value: 3,
     },
-    {
-      id: 4,
-      value: 4,
-
-    },
-    {
-      id: 5,
-      value: 5,
-      
-    },
   
 ];
 const NumItems = [
