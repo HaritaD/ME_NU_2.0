@@ -8,6 +8,8 @@ import CsvDownload from 'react-json-to-csv';
 
 
 
+
+
 const Diet = [
   {
     id: 1,
@@ -317,12 +319,10 @@ const Calories = [
 ];
 
 
-const Save = [
-  {
-    id: 1,
-    value: {prof},
-  },
-];
+const Save = [{
+  id: 1,
+  value: prof,
+}];
 
 
 function Profile() {
