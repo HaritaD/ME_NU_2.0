@@ -4,11 +4,7 @@ class Form extends Component {
 	constructor(props) {
 		super(props)
 
-		this.state = {
-			protein: '',
-			carb: '',
-      fat: '',
-		}
+		this.state = {protein:0,carb:0,fat:0,calories:0}
 	}
 
 	handleProteinChange = event => {
@@ -28,40 +24,58 @@ class Form extends Component {
 			fat: event.target.value
 		})
 	}
+	handleCalorieChange = event => {
+		this.setState({
+			calories: event.target.value
+		})
+	}
 
 	handleSubmit = event => {
 		/*alert(`${this.state.username} ${this.state.comments} ${this.state.topic}`)*/
 		event.preventDefault()
+		
+		
+		
 	}
+	
 
 	render() 
   {
-		const { protein, carb, fat } = this.state
+		const { protein, carb, fat,calories } = this.state
 		return (
 			<form onSubmit={this.handleSubmit}>
 				<div>
-					<label>Protein </label>
+					<label> Protein         </label>
 					<input
 						value={protein}
 						onChange={this.handleProteinChange}
 					/>
 				</div>
 				<div>
-					<label>Carb</label>
+					<label> Carb             </label>
 					<textarea
 						value={carb}
 						onChange={this.handleCarbChange}
 					/>
 				</div>
-        <div>
-					<label>Fat</label>
+        		<div>
+					<label> Fat               </label>
 					<textarea
-						value={carb}
+						value={fat}
 						onChange={this.handleFatChange}
 					/>
 				</div>
+				<div>
+					<label> Calories          </label>
+					<textarea
+						value={calories}
+						onChange={this.handleCalorieChange}
+					/>
+				</div>
 				<button type="submit">Submit</button>
+		
 			</form>
+			
 		)
 	}
 }
