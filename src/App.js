@@ -8,6 +8,7 @@ import Home from './Home';
 import Dropdown from './Dropdown';
 import './Dropdown.scss';
 import selection from './Dropdown';
+import Foot from './Foot';
 
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
 
@@ -21,6 +22,7 @@ function App() {
       <Route path = "/profile" component = {Profile}/>
       <Route path = "/recommender" component = {Recommender}/>
       </Switch>
+      <Foot/>
     </div>
     </Router>
     

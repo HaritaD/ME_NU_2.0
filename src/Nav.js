@@ -4,16 +4,16 @@ import {Link, withRouter} from 'react-router-dom';
 
 function Nav() {
   return (
-    <nav className = "-mt-5 p-6 mb-8 bg-purple-800 text-white">
+    <nav className = "-mt-5 p-6 mb-8 bg-purple-900 text-white">
      <ul className = "nav-links">
-        <h1 className = "mb-4 text-5xl">meNU</h1>
-         <Link className = "text-xl" to = "/"> 
+        <h1 className = "mb-4 text-7xl font-bold">meNU</h1>
+         <Link className = "text-2xl" to = "/"> 
             <li>Home</li>
          </Link>
-         <Link className = "text-xl" to = "/profile"> 
+         <Link className = "text-2xl" to = "/profile"> 
             <li>Profile</li>
          </Link>
-         <Link className = "text-xl" to = "/recommender"> 
+         <Link className = "text-2xl" to = "/recommender"> 
             <li>Recommender</li>
          </Link>
 
