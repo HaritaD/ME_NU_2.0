@@ -318,9 +318,9 @@ const Save = [{
 function Profile() {
   return (
     <div horizonatl layout> 
-    <div>
+    <div className="mb-4">
     <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
+      <h1 className = "mb-2" style={{ textAlign: 'center' }}>
         Dining Hall{' '}
         <span role="img" aria-label="Movie projector">
           
@@ -329,9 +329,9 @@ function Profile() {
       <Dropdown title="Select your preferred dining hall." items={DiningHall} Select />
     </div>
     </div>
-    <div>
+    <div className="mb-4">
     <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
+      <h1 className = "mb-2" style={{ textAlign: 'center' }}>
         Diet{' '}
         <span role="img" aria-label="Movie projector">
         </span>
@@ -340,9 +340,9 @@ function Profile() {
     </div>
     </div>
 
-    <div>
+    <div className="mb-4">
     <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
+      <h1 className = "mb-2" style={{ textAlign: 'center' }}>
         Allergies{' '}
         <span role="img" aria-label="Movie projector">
           
@@ -352,9 +352,9 @@ function Profile() {
     </div>
     </div>
 
-    <div>
+    <div className="mb-4">
     <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
+      <h1 className = "mb-2" style={{ textAlign: 'center' }}>
         Total Calories per Day{' '}
         <span role="img" aria-label="Movie projector">
           
@@ -364,9 +364,9 @@ function Profile() {
     </div>
     </div>
 
-    <div>
+    <div className="mb-4">
     <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
+      <h1 className = "mb-2" style={{ textAlign: 'center' }}>
         % Carbs{' '}
         <span role="img" aria-label="Movie projector">
           
@@ -376,9 +376,9 @@ function Profile() {
     </div>
     </div>
 
-    <div>
+    <div className="mb-4">
     <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
+      <h1 className = "mb-2" style={{ textAlign: 'center' }}>
         % Fats{' '}
         <span role="img" aria-label="Movie projector">
           
@@ -388,9 +388,9 @@ function Profile() {
     </div>
     </div>
 
-    <div>
+    <div className="mb-4">
     <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
+      <h1 className = "mb-2" style={{ textAlign: 'center' }}>
         % Protein{' '}
         <span role="img" aria-label="Movie projector">
           
@@ -400,9 +400,9 @@ function Profile() {
     </div>
     </div>
 
-    <div>
+    <div className="mb-4">
     <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
+      <h1 className = "mb-2" style={{ textAlign: 'center' }}>
         Meals per Day{' '}
         <span role="img" aria-label="Movie projector">
           
@@ -412,9 +412,9 @@ function Profile() {
     </div>
     </div>
 
-    <div>
+    <div className="mb-4">
     <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
+      <h1 className = "mb-2" style={{ textAlign: 'center' }}>
         Items per Meal{' '}
         <span role="img" aria-label="Movie projector">
           
@@ -424,9 +424,9 @@ function Profile() {
     </div>
     </div>
 
-    <div>
+    <div className="mb-4">
     <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
+      <h1 className = "mb-2" className = "mt-4 mb-2" style={{ textAlign: 'center' }}>
         Save{' '}
         <span role="img" aria-label="Movie projector">
           

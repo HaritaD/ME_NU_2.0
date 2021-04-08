@@ -78,10 +78,10 @@ function Dropdown({ title, items, multiSelect = false }) {
         onClick={() => toggle(!open)}
       >
         <div className='dd-header__title'>
-          <p className='dd-header__title--bold'>{title}</p>
+          <p className='dd-header__title--bold mt-3'>{title}</p>
         </div>
-        <div className='dd-header__action'>
-          <p>{open ? 'Close' : 'Open'}</p>
+        <div className='dd-header__action mt-3'>
+          <p className='mb-4'>{open ? 'Close' : 'Open'}</p>
         </div>
       </div>
       {open && (

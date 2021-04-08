@@ -3,19 +3,17 @@ import './App.css';
 import {Link, withRouter} from 'react-router-dom';
 
 function Nav() {
-  const navStyle = {
-    color: 'white'
-  };
   return (
-    <nav >
+    <nav className = "-mt-5 p-6 mb-8 bg-purple-800 text-white">
      <ul className = "nav-links">
-         <Link style = {navStyle} to = "/"> 
+        <h1 className = "mb-4 text-5xl">meNU</h1>
+         <Link className = "text-xl" to = "/"> 
             <li>Home</li>
          </Link>
-         <Link style = {navStyle} to = "/profile"> 
+         <Link className = "text-xl" to = "/profile"> 
             <li>Profile</li>
          </Link>
-         <Link style = {navStyle} to = "/recommender"> 
+         <Link className = "text-xl" to = "/recommender"> 
             <li>Recommender</li>
          </Link>
 
