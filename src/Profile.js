@@ -3,9 +3,14 @@ import './App.css';
 import Dropdown,{prof} from './Dropdown';
 import './Dropdown.scss';
 import {GiHeartWings} from 'react-icons/gi';
+<<<<<<< HEAD
 import Form from './Form';
 import './Form';
 import CsvDownload from 'react-json-to-csv';
+=======
+import './Form';
+import CsvDownload from 'react-json-to-csv'
+>>>>>>> 49e45a175bf187b95213fc54bbf75df953b0296f
 
 
 
@@ -83,16 +88,6 @@ const DiningHall = [
     {
       id: 3,
       value: 3,
-    },
-    {
-      id: 4,
-      value: 4,
-
-    },
-    {
-      id: 5,
-      value: 5,
-      
     },
   
 ];
@@ -318,20 +313,23 @@ const Calories = [
 ];
 
 
-const Save = [
-  {
-    id: 1,
-    value: {prof},
-  },
-];
+const Save = [{
+  id: 1,
+  value: prof,
+}];
 
 
 function Profile() {
   return (
-    <div horizonatl layout> 
+    
+    <div className = "grid grid-cols-2 gap-10">
     <div>
+
+    <div horizontal layout> 
+    <div className = "text-7xl font-semibold font-sans mb-6">Goals</div>
+    <div className="mb-4">
     <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
+      <h1 className = "text-xl font-sans font-semibold mb-2" style={{ textAlign: 'center' }}>
         Dining Hall{' '}
         <span role="img" aria-label="Movie projector">
           
@@ -340,9 +338,9 @@ function Profile() {
       <Dropdown title="Select your preferred dining hall." items={DiningHall} Select />
     </div>
     </div>
-    <div>
+    <div className="mb-4">
     <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
+      <h1 className = "text-xl font-sans font-semibold mb-2" style={{ textAlign: 'center' }}>
         Diet{' '}
         <span role="img" aria-label="Movie projector">
         </span>
@@ -351,9 +349,9 @@ function Profile() {
     </div>
     </div>
 
-    <div>
+    <div className="mb-4">
     <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
+      <h1 className = "text-xl font-sans font-semibold mb-2" style={{ textAlign: 'center' }}>
         Allergies{' '}
         <span role="img" aria-label="Movie projector">
           
@@ -363,82 +361,25 @@ function Profile() {
     </div>
     </div>
 
-    <div>
+    <div className="mb-4">
     <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
+      <h1 className = "text-xl font-sans font-semibold mb-2" style={{ textAlign: 'center' }}>
         Total Calories per Day{' '}
         <span role="img" aria-label="Movie projector">
           
         </span>
       </h1>
       <Dropdown title="Select your preferred total calories per day." items={Calories} Select />
+<<<<<<< HEAD
+=======
     </div>
-    </div>
-
-    <div>
-    <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
-        % Carbs{' '}
-        <span role="img" aria-label="Movie projector">
-          
-        </span>
-      </h1>
-      <Dropdown title="Select your preferred percentage of carbs." items={Carbs} Select />
     </div>
     </div>
 
-    <div>
+    <div className="mb-4">
     <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
-        % Fats{' '}
-        <span role="img" aria-label="Movie projector">
-          
-        </span>
-      </h1>
-      <Dropdown title="Select your preferred percentage of fats." items={Fats} Select />
-    </div>
-    </div>
-
-    <div>
-    <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
-        % Protein{' '}
-        <span role="img" aria-label="Movie projector">
-          
-        </span>
-      </h1>
-      <Dropdown title="Select your preferred percentage of protein." items={Protein} Select />
-    </div>
-    </div>
-
-    <div>
-    <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
-        Meals per Day{' '}
-        <span role="img" aria-label="Movie projector">
-          
-        </span>
-      </h1>
-      <Dropdown title="Select your preferred number of meals per day." items={NumSlots} Select />
-    </div>
-    </div>
-
-    <div>
-    <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
-        Items per Meal{' '}
-        <span role="img" aria-label="Movie projector">
-          
-        </span>
-      </h1>
-      <Dropdown title="Select your preferred number of items per meal." items={NumItems} Select />
-    </div>
-    </div>
-
-    <div>
-    <div className="container">
-      <h1 style={{ textAlign: 'center' }}>
-        Save{' '}
+      <h1 className = "text-xl mt-16 font-semibold font-sans mb-2" style={{ textAlign: 'center' }}>
+        Save Profile as CSV{' '}
         <span role="img" aria-label="Movie projector">
           
         </span>
@@ -464,9 +405,87 @@ function Profile() {
     Download
   </CsvDownload>
     </div>
+>>>>>>> 49e45a175bf187b95213fc54bbf75df953b0296f
+    </div>
+    </div>
+
+    <div>
+
+    <div className="mb-4">
+    <div className="container">
+<<<<<<< HEAD
+      <h1 style={{ textAlign: 'center' }}>
+=======
+    <div className = "text-7xl font-semibold font-sans mb-6">Macros</div>
+      <h1 className = "text-xl font-sans font-semibold mb-2" style={{ textAlign: 'center' }}>
+>>>>>>> 49e45a175bf187b95213fc54bbf75df953b0296f
+        % Carbs{' '}
+        <span role="img" aria-label="Movie projector">
+          
+        </span>
+      </h1>
+      <Dropdown title="Select your preferred percentage of carbs." items={Carbs} Select />
+    </div>
     </div>
     
 
+    <div className="mb-4">
+    <div className="container">
+      <h1 className = "text-xl font-sans font-semibold mb-2" style={{ textAlign: 'center' }}>
+        % Fats{' '}
+        <span role="img" aria-label="Movie projector">
+          
+        </span>
+      </h1>
+      <Dropdown title="Select your preferred percentage of fats." items={Fats} Select />
+    </div>
+    </div>
+
+    <div className="mb-4">
+    <div className="container">
+      <h1 className = "text-xl font-sans font-semibold mb-2" style={{ textAlign: 'center' }}>
+        % Protein{' '}
+        <span role="img" aria-label="Movie projector">
+          
+        </span>
+      </h1>
+      <Dropdown title="Select your preferred percentage of protein." items={Protein} Select />
+    </div>
+    </div>
+
+    <div className="mb-4">
+    <div className="container">
+      <h1 className = "text-xl font-sans font-semibold mb-2" style={{ textAlign: 'center' }}>
+        Meals per Day{' '}
+        <span role="img" aria-label="Movie projector">
+          
+        </span>
+      </h1>
+      <Dropdown title="Select your preferred number of meals per day." items={NumSlots} Select />
+    </div>
+    </div>
+
+    <div className="mb-12">
+    <div className="container">
+      <h1 className = "text-xl font-sans font-semibold mb-2" style={{ textAlign: 'center' }}>
+        Items per Meal{' '}
+        <span role="img" aria-label="Movie projector">
+          
+        </span>
+      </h1>
+      <Dropdown title="Select your preferred number of items per meal." items={NumItems} Select />
+    </div>
+    </div>
+
+    </div>
+<<<<<<< HEAD
+    
+
+=======
+
+
+    
+>>>>>>> 49e45a175bf187b95213fc54bbf75df953b0296f
     </div>
     
   );

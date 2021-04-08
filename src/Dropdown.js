@@ -16,7 +16,7 @@ export var prof = {
 }
 
 function Dropdown({ title, items, multiSelect = false }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const [selection, setSelection] = useState([]);
   if (title === 'Select your preferred dining hall.') {
     prof.hall = selection
@@ -43,7 +43,7 @@ function Dropdown({ title, items, multiSelect = false }) {
   console.log(prof)
 
   const toggle = () => setOpen(!open);
-  Dropdown.handleClickOutside = () => setOpen(false);
+  Dropdown.handleClickOutside = () => setOpen(true);
 
   function handleOnClick(item) {
     if (!selection.some(current => current.id === item.id)) {
@@ -78,10 +78,10 @@ function Dropdown({ title, items, multiSelect = false }) {
         onClick={() => toggle(!open)}
       >
         <div className='dd-header__title'>
-          <p className='dd-header__title--bold'>{title}</p>
+          <p className='text-xl font-semibold font-sans mt-3'>{title}</p>
         </div>
-        <div className='dd-header__action'>
-          <p>{open ? 'Close' : 'Open'}</p>
+        <div className='dd-header__action mt-5'>
+          <p className='mb-4'>{open ? '▲' : '▼'}</p>
         </div>
       </div>
       {open && (
