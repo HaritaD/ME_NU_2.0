@@ -3,12 +3,9 @@ import './App.css';
 import Dropdown,{prof} from './Dropdown';
 import './Dropdown.scss';
 import {GiHeartWings} from 'react-icons/gi';
-<<<<<<< HEAD
 import Form from './Form';
-=======
 import './Form';
 import CsvDownload from 'react-json-to-csv';
->>>>>>> dce147c25669c2f510b96d33d67c68128aa92729
 
 
 
@@ -350,11 +347,7 @@ function Profile() {
         <span role="img" aria-label="Movie projector">
         </span>
       </h1>
-<<<<<<< HEAD
-      <Dropdown title="Select Diet" items={dietitems} multiSelect />
-=======
       <Dropdown title="Select your preferred diet." items={Diet} Select />
->>>>>>> dce147c25669c2f510b96d33d67c68128aa92729
     </div>
     </div>
 
@@ -378,21 +371,13 @@ function Profile() {
           
         </span>
       </h1>
-<<<<<<< HEAD
-      <Dropdown title="Select Dining Hall" items={DiningHall} Select />
-=======
       <Dropdown title="Select your preferred total calories per day." items={Calories} Select />
->>>>>>> dce147c25669c2f510b96d33d67c68128aa92729
     </div>
     </div>
 
     <div>
     <div className="container">
       <h1 style={{ textAlign: 'center' }}>
-<<<<<<< HEAD
-        Number of Meals{' '}
-        Allergies{' '}
-=======
         % Carbs{' '}
         <span role="img" aria-label="Movie projector">
           
@@ -442,16 +427,11 @@ function Profile() {
     <div className="container">
       <h1 style={{ textAlign: 'center' }}>
         Items per Meal{' '}
->>>>>>> dce147c25669c2f510b96d33d67c68128aa92729
         <span role="img" aria-label="Movie projector">
           
         </span>
       </h1>
-<<<<<<< HEAD
-      <Dropdown title="Select Preferred # of Meals" items={NumSlots} Select />
-=======
       <Dropdown title="Select your preferred number of items per meal." items={NumItems} Select />
->>>>>>> dce147c25669c2f510b96d33d67c68128aa92729
     </div>
     </div>
 
@@ -485,11 +465,8 @@ function Profile() {
   </CsvDownload>
     </div>
     </div>
-<<<<<<< HEAD
-    <Form />
-=======
+    
 
->>>>>>> dce147c25669c2f510b96d33d67c68128aa92729
     </div>
     
   );
