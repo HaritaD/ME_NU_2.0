@@ -315,7 +315,7 @@ const Save = [{
 
 function Profile() {
   return (
-    <div className = "px-64">
+    <div className = "px-24 lg:px-64">
       <div className = "text-6xl font-bold">Profile</div>
       <div className="mb-4">
     <div className="container">
@@ -351,7 +351,7 @@ function Profile() {
     <div>
 
     <div horizontal layout> 
-    <div className = "text-5xl font-semibold font-sans mb-6">Goals</div>
+    <div className = "text-5xl font-semibold font-sans mb-2">Goals</div>
     <div className="mb-4">
     <div className="container">
       <h1 className = "text-xl font-sans font-semibold mb-2" style={{ textAlign: 'center' }}>
@@ -404,7 +404,7 @@ function Profile() {
 
     <div className="mb-4">
     <div className="container">
-    <div className = "text-5xl font-semibold font-sans mb-6">Macros</div>
+    <div className = "text-5xl font-semibold font-sans mb-2">Macros</div>
       <h1 className = "text-xl font-sans font-semibold mb-2" style={{ textAlign: 'center' }}>
         % Carbs{' '}
         <span role="img" aria-label="Movie projector">

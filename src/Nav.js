@@ -1,17 +1,16 @@
 import React from 'react';
 import './App.css';
 import {Link, withRouter} from 'react-router-dom';
+import meNU from './meNU.png';
 
 function Nav() {
   return (
-<nav class="-mt-5 mb-8 bg-purple-900 text-white font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-72 bg-white shadow sm:items-baseline w-full">
-  <div class="mb-2 sm:mb-0">
-    <a href="/home" class="text-4xl font-bold no-underline text-grey-darkest hover:text-blue-dark">meNU</a>
-  </div>
-  <div>
-    <a href="/" class="text-lg font-semibold no-underline text-grey-darkest hover:text-blue-dark ml-2">Home</a>
-    <a href="/profile" class="text-lg font-semibold no-underline text-grey-darkest hover:text-blue-dark ml-2">Profile</a>
-    <a href="/recommender" class="text-lg font-semibold no-underline text-grey-darkest hover:text-blue-dark ml-2">Recommendation</a>
+<nav className="mb-8 bg-white text-black font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-2 px-28 lg:px-72 bg-white shadow w-full">
+  <img className = "flex items-center justify-center" href="/home" src={meNU} alt="Logo" width="100" height="100"/>
+  <div className = "flex items-center justify-center">
+    <a href="/Home" className="px-1 text-lg font-semibold no-underline text-grey-darkest hover:text-blue-dark ml-2">Home</a>
+    <a href="/profile" className="px-1 text-lg font-semibold no-underline text-grey-darkest hover:text-blue-dark ml-2">Profile</a>
+    <a href="/recommender" className="px-1 text-lg font-semibold no-underline text-grey-darkest hover:text-blue-dark ml-2">Recommendation</a>
   </div>
 </nav>
   );
