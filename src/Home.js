@@ -12,7 +12,7 @@ const Home = () => {
       <Link 
         to='/profile'
       >
-        <Button variant="contained" className = "Button transform hover: scale-105 duration -300 ease-in-out" >Build Your Profile</Button>
+        <button className = "transform hover:scale-105 duration-300 ease-in-out" >Build Your Profile</button>
         
         
       </Link>

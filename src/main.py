@@ -2,6 +2,24 @@ import numpy as np
 from sklearn.cluster import KMeans
 from scipy.optimize import nnls
 import time
+from flask import Flask
+from flask_restful import Api, Resource
+
+app = Flask(__name__)
+api = Api(app)
+
+names = {"tim": {"age": 23, "gender": "male"},
+        "bill": {"age": 27, "gender": "female"}}
+
+
+class HelloWorld(Resource):
+    def get(self, name, test):
+        return names[name]
+
+api.add_resource(HelloWorld, "/helloworld/<string:name>/<int:test>")
+
+if __name__ == "__main__":
+    app.run(debug=True)
 
 class Consumer:
     '''A consumer instance will store the user's dietary restrictions, macro goals as a percentage of their calorie
