@@ -3,14 +3,10 @@ import './App.css';
 import Dropdown,{prof} from './Dropdown';
 import './Dropdown.scss';
 import {GiHeartWings} from 'react-icons/gi';
-<<<<<<< HEAD
 import Form from './Form';
 import './Form';
 import CsvDownload from 'react-json-to-csv';
-=======
-import './Form';
-import CsvDownload from 'react-json-to-csv'
->>>>>>> 49e45a175bf187b95213fc54bbf75df953b0296f
+
 
 
 
@@ -370,8 +366,6 @@ function Profile() {
         </span>
       </h1>
       <Dropdown title="Select your preferred total calories per day." items={Calories} Select />
-<<<<<<< HEAD
-=======
     </div>
     </div>
     </div>
@@ -405,7 +399,6 @@ function Profile() {
     Download
   </CsvDownload>
     </div>
->>>>>>> 49e45a175bf187b95213fc54bbf75df953b0296f
     </div>
     </div>
 
@@ -413,17 +406,14 @@ function Profile() {
 
     <div className="mb-4">
     <div className="container">
-<<<<<<< HEAD
       <h1 style={{ textAlign: 'center' }}>
-=======
     <div className = "text-7xl font-semibold font-sans mb-6">Macros</div>
       <h1 className = "text-xl font-sans font-semibold mb-2" style={{ textAlign: 'center' }}>
->>>>>>> 49e45a175bf187b95213fc54bbf75df953b0296f
         % Carbs{' '}
         <span role="img" aria-label="Movie projector">
           
         </span>
-      </h1>
+      </h1></h1>
       <Dropdown title="Select your preferred percentage of carbs." items={Carbs} Select />
     </div>
     </div>
@@ -478,14 +468,11 @@ function Profile() {
     </div>
 
     </div>
-<<<<<<< HEAD
     
 
-=======
 
 
     
->>>>>>> 49e45a175bf187b95213fc54bbf75df953b0296f
     </div>
     
   );

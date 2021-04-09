@@ -5,8 +5,9 @@ import {Link, withRouter} from 'react-router-dom';
 function Nav() {
   return (
     <nav className = "-mt-5 p-6 mb-8 bg-purple-900 text-white">
-     <ul className = "nav-links">
+      <ul className = "nav-links">
         <h1 className = "mb-4 text-7xl font-bold">meNU</h1>
+        <div class = "flex-container">
          <Link className = "text-2xl" to = "/"> 
             <li>Home</li>
          </Link>
@@ -16,8 +17,9 @@ function Nav() {
          <Link className = "text-2xl" to = "/recommender"> 
             <li>Recommender</li>
          </Link>
-
-     </ul>
+         </div>
+         </ul>
+     
     </nav>
   );
 }
