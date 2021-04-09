@@ -69,7 +69,7 @@ function Dropdown({ title, items, multiSelect = false }) {
   }
 
   return (
-    <div className='dd-wrapper'>
+    <div className='dd-wrapper px-8'>
       <div
         tabIndex={0}
         className='dd-header'
