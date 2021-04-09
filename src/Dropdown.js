@@ -69,7 +69,7 @@ function Dropdown({ title, items, multiSelect = false }) {
   }
 
   return (
-    <div className='dd-wrapper'>
+    <div className='dd-wrapper px-8'>
       <div
         tabIndex={0}
         className='dd-header'
@@ -78,7 +78,7 @@ function Dropdown({ title, items, multiSelect = false }) {
         onClick={() => toggle(!open)}
       >
         <div className='dd-header__title'>
-          <p className='text-xl font-semibold font-sans mt-3'>{title}</p>
+          <p className='py-3 text-xl font-semibold font-sans'>{title}</p>
         </div>
         <div className='dd-header__action mt-5'>
           <p className='mb-4'>{open ? '▲' : '▼'}</p>

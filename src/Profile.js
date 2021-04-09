@@ -3,10 +3,15 @@ import './App.css';
 import Dropdown,{prof} from './Dropdown';
 import './Dropdown.scss';
 import {GiHeartWings} from 'react-icons/gi';
+<<<<<<< HEAD
 import Form from './Form';
 import './Form';
 import CsvDownload from 'react-json-to-csv';
 
+=======
+import './Form';
+import CsvDownload from 'react-json-to-csv'
+>>>>>>> 8bf731224ca1acdef94c479e0e1dea0fc084cc3c
 
 
 
@@ -317,12 +322,43 @@ const Save = [{
 
 function Profile() {
   return (
-    
-    <div className = "grid grid-cols-2 gap-10">
+    <div className = "mt-10 px-24 lg:px-64">
+      <div className = "text-6xl font-bold">Profile</div>
+      <div className="mb-4">
+    <div className="container">
+      <h1 className = "mt-3 font-semibold font-sans mb-2" style={{ textAlign: 'center' }}>
+        Save Profile as CSV{' '}
+        <span role="img" aria-label="Movie projector">
+          
+        </span>
+      </h1>
+      <CsvDownload 
+    data={Save}
+    filename="good_data.csv"
+    style={{ //pass other props, like styles
+      boxShadow:"inset 0px 1px 0px 0px #000000",
+      background:"linear-gradient(to bottom, #000000 5%, #000000 100%)",
+      backgroundColor:"#000000",
+      borderRadius:"6px",
+      border:"1px solid #000000",
+      display:"inline-block",
+      cursor:"pointer","color":"#ffffff",
+      fontSize:"15px",
+      fontWeight:"bold",
+      padding:"6px 24px",
+      textDecoration:"none",
+      textShadow:"0px 1px 0px #000000"
+      }}
+  >
+    Download
+  </CsvDownload>
+    </div>
+    </div>
+    <div className = "px-5 grid grid-cols-2 gap-6">
     <div>
 
     <div horizontal layout> 
-    <div className = "text-7xl font-semibold font-sans mb-6">Goals</div>
+    <div className = "text-5xl font-semibold font-sans mb-1">Goals</div>
     <div className="mb-4">
     <div className="container">
       <h1 className = "text-xl font-sans font-semibold mb-2" style={{ textAlign: 'center' }}>
@@ -369,6 +405,7 @@ function Profile() {
     </div>
     </div>
     </div>
+<<<<<<< HEAD
 
     <div className="mb-4">
     <div className="container">
@@ -400,14 +437,20 @@ function Profile() {
   </CsvDownload>
     </div>
     </div>
+=======
+>>>>>>> 8bf731224ca1acdef94c479e0e1dea0fc084cc3c
     </div>
 
     <div>
 
     <div className="mb-4">
     <div className="container">
+<<<<<<< HEAD
       <h1 style={{ textAlign: 'center' }}>
     <div className = "text-7xl font-semibold font-sans mb-6">Macros</div>
+=======
+    <div className = "text-5xl font-semibold font-sans mb-1">Macros</div>
+>>>>>>> 8bf731224ca1acdef94c479e0e1dea0fc084cc3c
       <h1 className = "text-xl font-sans font-semibold mb-2" style={{ textAlign: 'center' }}>
         % Carbs{' '}
         <span role="img" aria-label="Movie projector">
@@ -468,11 +511,18 @@ function Profile() {
     </div>
 
     </div>
+<<<<<<< HEAD
     
 
 
 
     
+=======
+
+
+    
+    </div>
+>>>>>>> 8bf731224ca1acdef94c479e0e1dea0fc084cc3c
     </div>
     
   );
