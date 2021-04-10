@@ -1,0 +1,2 @@
+id,value
+1,{"hall":[{"id":4,"value":"Foster Walker"}],"diet":[{"id":5,"value":"Vegan"}],"allergies":[{"id":2,"value":"Nuts"},{"id":3,"value":"Shellfish"},{"id":4,"value":"Eggs"},{"id":1,"value":"Dairy"},{"id":5,"value":"Soy"}],"calories":[{"id":8,"value":2400}],"carbs":[{"id":3,"value":30}],"fats":[{"id":2,"value":20}],"protein":[{"id":5,"value":50}],"meals":[{"id":3,"value":3}],"items":[{"id":3,"value":3}]}

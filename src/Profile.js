@@ -315,7 +315,7 @@ const Save = [{
 
 function Profile() {
   return (
-    <div className = "mt-10 px-24 lg:px-64">
+    <div className = "mt-10 px-24 md:px-12 lg:px-64">
       <div className = "text-6xl font-bold">Profile</div>
       <div className="mb-4">
     <div className="container">
@@ -347,7 +347,7 @@ function Profile() {
   </CsvDownload>
     </div>
     </div>
-    <div className = "px-5 grid grid-cols-2 gap-6">
+    <div className = "md:px-1 lg:px-5 grid grid-cols-2 md:gap-0 lg:gap-6">
     <div>
 
     <div horizontal layout> 

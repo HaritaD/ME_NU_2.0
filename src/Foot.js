@@ -4,8 +4,8 @@ import {Link, withRouter} from 'react-router-dom';
 
 function Foot() {
   return (
-    <nav className = "mt-12 p-3 -mb-5 bg-purple-500 text-white">
-        <h1 className = "text-md">meNU 2021 | Made with ♥ by our contributors.</h1>
+    <nav className = "p-3 bg-purple-500 text-white">
+        <h1 className = "text-md">meNU 2021 | Made with ♥ by our <a class="text-yellow-300" href="https://github.com/HaritaD/ME_NU_2.0" target="_blank">contributors</a>.</h1>
     </nav>
   );
 }
