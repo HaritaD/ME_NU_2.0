@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { GiHalfLog } from 'react-icons/gi';
+
 import './App.css';
 import { b_foods, b_servings, b_sums, l_foods, l_servings, l_sums, d_foods, d_servings, d_sums } from './waffle.json';
-
+import {prof} from './Dropdown';
 function Recommender() {
 
   return (
@@ -10,7 +10,7 @@ function Recommender() {
   <div class="container px-5 py-12 mx-auto">
     <div class="border-2 border-gray-100 rounded-2xl py-12 flex flex-col text-center w-full mb-20">
       <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Recommender</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Let me suggest something for you to eat at <a className="font-semibold">Sargent</a>. I promise it'll be decent!</p>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Let's suggest something for you to eat at <a className="font-semibold">Allison</a>. I promise it'll be decent!</p>
     </div>
     <div class="text-xs flex flex-wrap -m-4">
       <div class="p-4 xl:w-1/4 md:w-1/2 w-full">

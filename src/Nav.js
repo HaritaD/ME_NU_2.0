@@ -5,7 +5,7 @@ import meNU from './meNU.png';
 
 function Nav() {
   return (
-  <header className="border-b-4 border-purple-900 bg-white text-gray-600 body-font">
+  <header className="px-5 border-b-4 border-purple-900 bg-white text-gray-600 body-font">
     <div className="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
       <nav className="flex text-lg lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
         <a href="/" className="mr-5 hover:text-gray-900">Home</a>
