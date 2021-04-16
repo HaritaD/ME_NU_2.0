@@ -1,2 +1,2 @@
 id,value
-1,{"hall":[{"id":2,"value":"Sargent"}],"diet":[{"id":3,"value":"Balanced"}],"allergies":[{"id":2,"value":"Nuts"},{"id":3,"value":"Shellfish"},{"id":5,"value":"Soy"}],"calories":[{"id":7,"value":2200}],"carbs":[{"id":6,"value":60}],"fats":[{"id":1,"value":10}],"protein":[{"id":3,"value":30}],"meals":[{"id":3,"value":3}],"items":[{"id":3,"value":3}]}
+1,{"hall":[{"id":1,"value":"Allison"}],"diet":[{"id":5,"value":"Vegan"}],"allergies":[{"id":1,"value":"Dairy"},{"id":2,"value":"Nuts"},{"id":4,"value":"Eggs"},{"id":3,"value":"Shellfish"},{"id":5,"value":"Soy"}],"calories":[{"id":6,"value":2000}],"carbs":[{"id":8,"value":80}],"fats":[{"id":2,"value":20}],"protein":[{"id":2,"value":20}],"meals":[{"id":3,"value":3}],"items":[{"id":4,"value":4}]}

@@ -53,7 +53,7 @@ function Recommender() {
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </button>
-          <p class="text-xs text-gray-500 mt-3">{b_servings[0]} servings, {b_servings[1]} servings, {b_servings[2]}, servings</p>
+          <p class="text-xs text-gray-500 mt-3">{b_servings[0]} servings, {b_servings[1]} servings, {b_servings[2]} servings</p>
         </div>
       </div>
       <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
@@ -95,7 +95,7 @@ function Recommender() {
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </button>
-          <p class="text-xs text-gray-500 mt-3">{l_servings[0]} servings, {l_servings[1]} servings, {l_servings[2]}, servings</p>
+          <p class="text-xs text-gray-500 mt-3">{l_servings[0]} servings, {l_servings[1]} servings, {l_servings[2]} servings</p>
         </div>
       </div>
       <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
@@ -137,7 +137,7 @@ function Recommender() {
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </button>
-          <p class="text-xs text-gray-500 mt-3">{d_servings[0]} servings, {d_servings[1]} servings, {d_servings[2]}, servings</p>
+          <p class="text-xs text-gray-500 mt-3">{d_servings[0]} servings, {d_servings[1]} servings, {d_servings[2]} servings</p>
         </div>
       </div>
       <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
