@@ -27,7 +27,7 @@ def parser(filename):
 
     return dining_hall, goals
 
-parser('/USERS/sinth/VSCode/ME_NU_2.0/src/CSVs/good_data-13.csv')
+parser('/USERS/sinth/VSCode/ME_NU_2.0/src/CSVs/good_data.csv')
 
 
 def read_csv(dining_hall):
@@ -239,7 +239,7 @@ def output_to_json(filename, names, servings, sums):
         'd_foods': [names[i] for i in range(6, 9)],
         'd_servings': [servings[i] for i in range(6, 9)],
         'd_sums': [sums[i] for i in range(8, 12)],
-        'd_hall':  parser('/USERS/sinth/VSCode/ME_NU_2.0/src/CSVs/good_data-13.csv')[0]}
+        'd_hall':  parser('/USERS/sinth/VSCode/ME_NU_2.0/src/CSVs/good_data.csv')[0]}
         
     with open(filename, "w") as f:
         json.dump(profile, f)

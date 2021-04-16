@@ -1,0 +1,2 @@
+id,value
+1,{"hall":[{"id":2,"value":"Sargent"}],"diet":[{"id":3,"value":"Balanced"}],"allergies":[{"id":2,"value":"Nuts"},{"id":3,"value":"Shellfish"},{"id":5,"value":"Soy"}],"calories":[{"id":7,"value":2200}],"carbs":[{"id":6,"value":60}],"fats":[{"id":1,"value":10}],"protein":[{"id":3,"value":30}],"meals":[{"id":3,"value":3}],"items":[{"id":3,"value":3}]}
